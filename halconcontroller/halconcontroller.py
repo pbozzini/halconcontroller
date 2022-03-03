@@ -46,7 +46,7 @@ class HalconProgram:
         Results['Iconic Variables'] = Iconic_Variables
         return Results
 
-    def SaveToJSON(self):
+    def saveToJSON(self):
         Results=self.getResults()
         # save JSON file into folder
         with open(self.ProgramName, 'w', encoding='utf-8') as f:
