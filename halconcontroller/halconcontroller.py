@@ -2,7 +2,7 @@
 
 import os
 import halcon as ha
-
+import json
 
 class HalconProgram:
 
@@ -45,4 +45,16 @@ class HalconProgram:
         Results['Control Variables'] = Control_Variables
         Results['Iconic Variables'] = Iconic_Variables
         return Results
+
+    def SaveToJSON(self):
+        Results=self.getResults()
+        # save JSON file into folder
+        with open(self.ProgramName, 'w', encoding='utf-8') as f:
+            json_string = json.dump(Results, f, ensure_ascii=False, indent=4)
+        print('JSON File '+'"'+self.ProgramName+'"'+'successfully written!')
+        return
+
+
+
+
 

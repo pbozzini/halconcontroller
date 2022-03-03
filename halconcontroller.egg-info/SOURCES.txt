@@ -1,0 +1,9 @@
+LICENSE.txt
+README.md
+setup.cfg
+setup.py
+halconcontroller/halconcontroller.py
+halconcontroller.egg-info/PKG-INFO
+halconcontroller.egg-info/SOURCES.txt
+halconcontroller.egg-info/dependency_links.txt
+halconcontroller.egg-info/top_level.txt
