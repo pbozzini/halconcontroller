@@ -49,7 +49,7 @@ class HalconProgram:
     def saveToJSON(self):
         Results=self.getResults()
         Results=Results['Control Variables']
-        if 'OCRHandle' in Ex.keys()
+        if 'OCRHandle' in Ex.keys():
             del Results['OCRHandle']
         l=len(self.ProgramName)
         Name=self.ProgramName [:l-5]  
