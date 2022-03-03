@@ -48,6 +48,7 @@ class HalconProgram:
 
     def saveToJSON(self):
         Results=self.getResults()
+        Results=Results['Control Variables']
         # save JSON file into folder
         with open(self.ProgramName, 'w', encoding='utf-8') as f:
             json_string = json.dump(Results, f, ensure_ascii=False, indent=4)
