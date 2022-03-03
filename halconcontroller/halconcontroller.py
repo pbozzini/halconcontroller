@@ -49,7 +49,8 @@ class HalconProgram:
     def saveToJSON(self):
         Results=self.getResults()
         Results=Results['Control Variables']
-        del Results['Control Variables']['OCRHandle']
+        if 'OCRHandle' in Ex.keys()
+            del Results['OCRHandle']
         l=len(self.ProgramName)
         Name=self.ProgramName [:l-5]  
         # save JSON file into folder
