@@ -54,7 +54,7 @@ class HalconProgram:
         l=len(self.ProgramName)
         Name=self.ProgramName [:l-5]  
         # save JSON file into folder
-        with open(Name, 'w', encoding='utf-8') as f:
+        with open(Name+'.json', 'w', encoding='utf-8') as f:
             json_string = json.dump(Results, f, ensure_ascii=False, indent=4)
         print('JSON File '+'"'+self.ProgramName+'"'+'successfully written!')
         return
